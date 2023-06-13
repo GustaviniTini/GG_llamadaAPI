@@ -1,0 +1,41 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GG_llamadaAPI.MainPage"
+             Title="Clima Actual">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+         
+                <Label Text="Ingrese la latitud:" Grid.Row="0" />
+                <Entry x:Name="GG_latitudEntry" Placeholder="Latitud" Grid.Row="1" />
+                <Label Text="Ingrese la longitud:" Grid.Row="2" />
+                <Entry x:Name="GG_longitudEntry" Placeholder="Longitud" Grid.Row="3" />
+                <Button Text="EnviarDatos" Clicked="GG_OnEnviarClicked" Grid.Row="4" />
+                <Label Text="Estado clima" Grid.Row="5" />
+                <Label x:Name="GG_estadoClimaLabel" Grid.Row="6" />
+                <Label Text="Pais" Grid.Row="7" />
+                <Label x:Name="GG_paisLabel" Grid.Row="8" />
+                <Label Text="Ciudad" Grid.Row="9" />
+                <Label  x:Name="GG_ciudadLabel" Grid.Row="10" />
+                
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    <!--<Label Text="Ingrese la latitud:" />
+        <Entry x:Name="latitudEntry" Placeholder="Latitud"/>
+        <Label Text="Ingrese la longitud:"  />
+        
+        <Entry x:Name="longitudEntry" Placeholder="Longitud"  />
+        <Button Text="Enviar" Grid.Row="2" Clicked="OnEnviarClicked"  Grid.ColumnSpan="2" />
+        <Image x:Name="Icono" Grid.Row="3" Grid.Column="1" WidthRequest="100" HeightRequest="100"/>
+        <Label Text="Estado del clima:" Grid.Row="4"/>
+        <Label x:Name="estadoClimaLabel" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center"/>
+        <Label Text="País:" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="End"/>
+        <Label x:Name="paisLabel" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"/>
+        <Label Text="Ciudad:" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="End"/>
+        <Label x:Name="ciudadLabel" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center"/>-->
+
+</ContentPage>
